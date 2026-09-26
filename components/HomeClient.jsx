@@ -36,7 +36,7 @@ export default function HomeClient()  {
 
   return (
     <>
-      {/* <section className="container-shell py-8 sm:py-10 lg:py-14">
+      <section className="container-shell py-8 sm:py-10 lg:py-14">
         <div className="grid min-h-[520px] overflow-hidden rounded-2xl border border-[#262c31] bg-[#1a1e22] px-7 py-10 shadow-[0_18px_50px_rgba(0,0,0,.28)] sm:px-10 sm:py-12 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:gap-10 lg:px-12 xl:px-14">
           <div className="relative z-10">
             <div className="mb-5 text-xs font-black uppercase tracking-[.24em] text-[#ccff00]">Workout Library</div>
@@ -55,7 +55,7 @@ export default function HomeClient()  {
         </div>
       </section>
 
-      <section id="library" className="container-shell scroll-mt-28 py-8">
+      {/* <section id="library" className="container-shell scroll-mt-28 py-8">
         <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div>
             <h2 className="display-font text-4xl uppercase sm:text-5xl">The Library</h2>
