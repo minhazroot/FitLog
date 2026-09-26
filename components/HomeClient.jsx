@@ -55,7 +55,7 @@ export default function HomeClient()  {
         </div>
       </section>
 
-      {/* <section id="library" className="container-shell scroll-mt-28 py-8">
+      <section id="library" className="container-shell scroll-mt-28 py-8">
         <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div>
             <h2 className="display-font text-4xl uppercase sm:text-5xl">The Library</h2>
@@ -82,7 +82,7 @@ export default function HomeClient()  {
         )}
         {error && <div className="rounded-xl border border-red-500/30 bg-red-500/10 p-5 text-red-300">{error}</div>}
         {!loading && !error && <div className="card-grid">{sorted.map((workout) => <WorkoutCard key={workout.id} workout={workout} />)}</div>}
-      </section> */}
+      </section>
     </>
   );
 }
