@@ -1,38 +1,38 @@
-// "use client";
+"use client";
 
-// import { useEffect, useMemo, useState } from "react";
-// import { ArrowDown, ChevronDown } from "lucide-react";
-// import WorkoutCard from "./WorkoutCard";
+import { useEffect, useMemo, useState } from "react";
+import { ArrowDown, ChevronDown } from "lucide-react";
+import WorkoutCard from "./WorkoutCard";
 
-// const API = "https://api.abcz.workers.dev/api/fitlog";
+const API = "https://api.abcz.workers.dev/api/fitlog";
 
-// export default function HomeClient() {
-//   const [workouts, setWorkouts] = useState([]);
-//   const [loading, setLoading] = useState(true);
-//   const [error, setError] = useState("");
-//   const [sortBy, setSortBy] = useState("duration");
+export default function HomeClient()  {
+  const [workouts, setWorkouts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [sortBy, setSortBy] = useState("duration");
 
-//   useEffect(() => {
-//     async function load() {
-//       try {
-//         const res = await fetch(API);
-//         if (!res.ok) throw new Error("Could not fetch workouts");
-//         setWorkouts(await res.json());
-//       } catch (e) {
-//         setError(e.message || "Something went wrong");
-//       } finally {
-//         setLoading(false);
-//       }
-//     }
-//     load();
-//   }, []);
+  useEffect(() => {
+    async function load() {
+      try {
+        const res = await fetch(API);
+        if (!res.ok) throw new Error("Could not fetch workouts");
+        setWorkouts(await res.json());
+      } catch (e) {
+        setError(e.message || "Something went wrong");
+      } finally {
+        setLoading(false);
+      }
+    }
+    load();
+  }, []);
 
-//   const sorted = useMemo(() => {
-//     const data = [...workouts];
-//     if (sortBy === "duration") return data.sort((a, b) => a.duration - b.duration);
-//     if (sortBy === "calories") return data.sort((a, b) => a.caloriesBurned - b.caloriesBurned);
-//     return data.sort((a, b) => b.rating - a.rating);
-//   }, [workouts, sortBy]);
+  const sorted = useMemo(() => {
+    const data = [...workouts];
+    if (sortBy === "duration") return data.sort((a, b) => a.duration - b.duration);
+    if (sortBy === "calories") return data.sort((a, b) => a.caloriesBurned - b.caloriesBurned);
+    return data.sort((a, b) => b.rating - a.rating);
+  }, [workouts, sortBy]);
 
   return (
     <>
