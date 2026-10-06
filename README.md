@@ -32,5 +32,24 @@ FitLog is a dark, responsive workout library built with Next.js App Router and T
 8. Loading states and custom 404 page.
 9. Plan and saved data persist in localStorage.
 
+## Run Locally
+
+### 1. Clone the repository
+
+https://github.com/minhazroot/FitLog.git
+
+### 2. Go to the project folder
+
+cd project-name
+
+### 3. Install dependencies
+
+npm install
+
+### 4. Start the development server
+
+npm run dev
+
+### Open the local link in any browser
     
 <img width="1920" height="3034" alt="screencapture-fit-log-rose-sigma-vercel-app-2026-10-07-01_29_00" src="https://github.com/user-attachments/assets/d8b93360-f250-49e4-ae7f-b1fa9c01ef93" />
