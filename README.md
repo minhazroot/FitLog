@@ -6,7 +6,7 @@
 
 FitLog is a dark, responsive workout library built with Next.js App Router and Tailwind CSS. Users can browse 12 exercises, inspect detailed workout information, build a five-exercise daily plan, save workouts for later, and keep plan data after refresh with localStorage.
 
-
+## Live link :- https://fit-log-rose-sigma.vercel.app/
 ## 🚀 Technologies
 
 
